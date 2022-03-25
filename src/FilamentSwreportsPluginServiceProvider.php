@@ -2,14 +2,21 @@
 
 namespace LucaCalcaterra\FilamentSwreportsPlugin;
 
-use LucaCalcaterra\FilamentSwreportsPlugin\Commands\FilamentSwreportsPluginCommand;
+use Filament\PluginServiceProvider;
 use Spatie\LaravelPackageTools\Package;
-use Spatie\LaravelPackageTools\PackageServiceProvider;
+use LucaCalcaterra\FilamentSwreportsPlugin\Commands\FilamentSwreportsPluginCommand;
+use LucaCalcaterra\FilamentSwreportsPlugin\Resources\ReportResource;
 
-class FilamentSwreportsPluginServiceProvider extends PackageServiceProvider
+class FilamentSwreportsPluginServiceProvider extends PluginServiceProvider
 {
+    protected array $resources = [
+        ReportResource::class,
+    ];
+
+
     public function configurePackage(Package $package): void
     {
+
         /*
          * This class is a Package Service Provider
          *
@@ -19,7 +26,7 @@ class FilamentSwreportsPluginServiceProvider extends PackageServiceProvider
             ->name('filament-swreports-plugin')
             ->hasConfigFile()
             ->hasViews()
-            ->hasMigration('create_filament-swreports-plugin_table')
+            ->hasMigration('create_filament_swreports_plugin_table')
             ->hasCommand(FilamentSwreportsPluginCommand::class);
     }
 }
