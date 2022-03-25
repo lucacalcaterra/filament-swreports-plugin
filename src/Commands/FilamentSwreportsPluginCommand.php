@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace LucaCalcaterra\FilamentSwreportsPlugin\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class FilamentSwreportsPluginCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'filament-swreports-plugin';
 
     public $description = 'My command';
 
