@@ -3,8 +3,8 @@
 namespace LucaCalcaterra\FilamentSwreportsPlugin\Resources\ReportResource\Pages;
 
 use App\Filament\Resources\ReportResource;
-use Filament\Resources\Pages\EditRecord;
 use Filament\Pages\Actions\ButtonAction;
+use Filament\Resources\Pages\EditRecord;
 
 class EditReport extends EditRecord
 {
@@ -15,7 +15,6 @@ class EditReport extends EditRecord
         // pulsante per validazione finale
         return array_merge(parent::getFormActions(), [
             ButtonAction::make('Salva e Invia')->action(function () {
-
                 $this->record->stato = "INVIATO";
                 $this->record->save();
                 redirect(

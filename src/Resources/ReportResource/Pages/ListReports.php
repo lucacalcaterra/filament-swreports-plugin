@@ -2,12 +2,12 @@
 
 namespace LucaCalcaterra\FilamentSwreportsPlugin\Resources\ReportResource\Pages;
 
-use Illuminate\Database\Eloquent\Builder;
-
-use LucaCalcaterra\FilamentSwreportsPlugin\Resources\ReportResource;
 use Filament\Resources\Pages\ListRecords;
 
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Facades\Auth;
+
+use LucaCalcaterra\FilamentSwreportsPlugin\Resources\ReportResource;
 
 class ListReports extends ListRecords
 {

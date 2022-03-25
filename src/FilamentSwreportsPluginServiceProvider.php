@@ -3,16 +3,15 @@
 namespace LucaCalcaterra\FilamentSwreportsPlugin;
 
 use Filament\PluginServiceProvider;
-use Spatie\LaravelPackageTools\Package;
 use LucaCalcaterra\FilamentSwreportsPlugin\Commands\FilamentSwreportsPluginCommand;
 use LucaCalcaterra\FilamentSwreportsPlugin\Resources\ReportResource;
+use Spatie\LaravelPackageTools\Package;
 
 class FilamentSwreportsPluginServiceProvider extends PluginServiceProvider
 {
     protected array $resources = [
         ReportResource::class,
     ];
-
 
     public function configurePackage(Package $package): void
     {
