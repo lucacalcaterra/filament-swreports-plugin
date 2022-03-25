@@ -2,9 +2,9 @@
 
 namespace LucaCalcaterra\FilamentSwreportsPlugin\Resources\ReportResource\Pages;
 
-use App\Filament\Resources\ReportResource;
-use Filament\Resources\Pages\EditRecord;
 use Filament\Pages\Actions\ButtonAction;
+use Filament\Resources\Pages\EditRecord;
+use LucaCalcaterra\FilamentSwreportsPlugin\Resources\ReportResource;
 
 class EditReport extends EditRecord
 {

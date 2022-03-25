@@ -2,8 +2,9 @@
 
 namespace LucaCalcaterra\FilamentSwreportsPlugin\Resources\ReportResource\Pages;
 
-use App\Filament\Resources\ReportResource;
+
 use Filament\Resources\Pages\CreateRecord;
+use LucaCalcaterra\FilamentSwreportsPlugin\Resources\ReportResource;
 
 class CreateReport extends CreateRecord
 {
