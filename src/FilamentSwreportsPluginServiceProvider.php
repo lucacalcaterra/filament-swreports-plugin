@@ -2,9 +2,9 @@
 
 namespace LucaCalcaterra\FilamentSwreportsPlugin;
 
+use LucaCalcaterra\FilamentSwreportsPlugin\Commands\FilamentSwreportsPluginCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use LucaCalcaterra\FilamentSwreportsPlugin\Commands\FilamentSwreportsPluginCommand;
 
 class FilamentSwreportsPluginServiceProvider extends PackageServiceProvider
 {
