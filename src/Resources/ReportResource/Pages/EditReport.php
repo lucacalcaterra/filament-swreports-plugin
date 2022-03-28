@@ -15,7 +15,6 @@ class EditReport extends EditRecord
         // pulsante per validazione finale
         return array_merge(parent::getFormActions(), [
             ButtonAction::make('Salva e Invia')->action(function () {
-
                 $this->record->stato = "INVIATO";
                 $this->record->save();
                 redirect(

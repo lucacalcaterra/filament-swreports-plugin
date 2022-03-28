@@ -13,7 +13,6 @@ class Report extends Model
 
     protected $fillable = ['user_id', 'data', 'testo'];
 
-
     /*
     |--------------------------------------------------------------------------
     | RELATIONS

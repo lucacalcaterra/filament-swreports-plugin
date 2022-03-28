@@ -3,16 +3,15 @@
 namespace LucaCalcaterra\FilamentSwreportsPlugin\Resources;
 
 use Filament\Forms;
-use Filament\Tables;
 use Filament\Resources\Form;
+use Filament\Resources\Resource;
 use Filament\Resources\Table;
 
-use Filament\Resources\Resource;
+use Filament\Tables;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\Rules\Unique;
 use LucaCalcaterra\FilamentSwreportsPlugin\Models\Report;
 use LucaCalcaterra\FilamentSwreportsPlugin\Resources\ReportResource\Pages;
-
 
 class ReportResource extends Resource
 {
@@ -38,7 +37,7 @@ class ReportResource extends Resource
                         'attachFiles',
                         'codeBlock',
                     ])->required(),
-                ])
+                ]),
 
             ]);
     }
@@ -58,7 +57,7 @@ class ReportResource extends Resource
                         'primary',
                         'warning' => 'INSERITO',
                         'success' => 'INVIATO',
-                    ])
+                    ]),
             ])
             ->filters([
                 //
