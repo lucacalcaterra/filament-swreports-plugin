@@ -27,7 +27,7 @@ class FilamentSwreportsPluginServiceProvider extends PluginServiceProvider
             ->hasViews()
             ->hasMigrations([
                 'create_filament_swreports_plugin_table',
-                '2022_02_24_202551_create_reports_table'
+                '2022_02_24_202551_create_reports_table',
             ])
             ->hasCommand(FilamentSwreportsPluginCommand::class);
     }
